@@ -1,0 +1,124 @@
+* {
+    font-family: 'Vazir';
+    direction: rtl;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-size: cover;
+    color: #D4CDCE;
+}
+
+div.container{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.icon{ 
+    width: 70px;
+    height: 60px;
+    font-size: 3em;
+    position: absolute;
+    top: 2px;
+    left: 30px;
+    cursor: pointer;
+    /* border: 1px solid blue; */
+}
+
+div.titrMain{
+    width: 200px;
+    font-size: 1.5em;
+    display: block;
+    margin: 15px 50px 0px 0px;
+    /* border: 1px solid blue; */
+}
+
+div.homePage{
+    width: 90%;
+    display: block;
+    margin: 0px 50px 0px 0px;
+    /* border: 1px solid green; */
+}
+
+div.titr{
+    width: 200px;
+    font-size: 1.5em;
+    display: block;
+    margin: 0px;
+    /* border: 1px solid blue; */
+}
+
+div.paragraph {
+    width: 100%;
+    font-size: 1.1em;
+    margin-top: 10px;
+    /* border: 1px solid blue; */
+}
+
+div.footer {
+    display: block;
+    text-align: center;
+    position: absolute;
+    right: 45%;
+    bottom: 20px;
+    /* border: 1px solid green; */
+}
+
+div.modal {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 25%;
+    background-color: #2E628C;
+    display: none;
+}
+
+div.navBar {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 30%;
+    overflow: hidden;
+}
+
+div.navBar a {
+    font-size: 1.8em;
+    margin: 3px 0px;
+    padding: 10px 6px 6px 10px;
+    text-decoration: none;
+    color: #D4CDCE;
+    display: block;
+    border: none;
+    background: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.navBar a:hover,
+div.icon i:hover {
+    color: white;
+}
+
+@media ( max-width: 700px ){
+    div.mainPage{
+        flex-direction: column;
+    }
+
+    div.column1,
+    div.column2,
+    div.column3{
+        width: 100%;
+        height: auto;
+    }
+
+    div.navBar {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}

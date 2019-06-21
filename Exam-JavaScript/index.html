@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>سایت شخصی</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vazir.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="bodyId">
+    <div class="container">
+        <div class="icon" onclick="showNavBar();">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="titrMain">
+            سایت شخصی<br>
+        </div>
+        <div class="homePage">
+            <div class="titr">
+                خانه
+            </div>
+            <div class="paragraph">
+                لورم ایپسوم متن ساختگی<br>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون
+                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                متنوع
+                با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                جامعه
+                و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و
+                فرهنگ
+                پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
+                شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل
+                دنیای
+                موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </div>
+            <div class="footer"> 2019 سایت شخصی</div>
+        </div>
+        <div class="modal">
+            <div class="navBar">
+                <a href="#home">خانه</a>
+                <a href="#dashboard">محصولات</a>
+                <a href="#cartable">در باره ما</a>
+                <a href="#secretariat">وبلاگ</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let homePage = document.getElementsByClassName("homePage");
+        let modal = document.getElementsByClassName("modal");
+        modal[0].style.display = "none";
+        document.getElementById("bodyId").style = "background-Image : url('images/blue.png');";
+        
+        function showNavBar()
+        {
+            debugger
+            if( modal[0].style.display == "none" )
+            {
+                document.getElementById("bodyId").style = "background-Image : url('images/magenta.png');";
+                homePage[0].style.display = "none";
+                modal[0].style.display = "block";
+            }
+            else
+            {
+                document.getElementById("bodyId").style = "background-Image : url('images/blue.png');";
+                modal[0].style.display = "none";
+                homePage[0].style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
